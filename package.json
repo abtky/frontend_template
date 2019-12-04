@@ -4,7 +4,7 @@
   "description": "Starter template for web front-end development.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --watch-content-base & webpack --mode development",
+    "dev": "webpack-dev-server",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -29,6 +29,8 @@
     "cross-env": "^6.0.3",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"

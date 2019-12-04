@@ -15,11 +15,22 @@ module.exports = (env, options) => {
             publicPath: '/',
             filename: '[name].js'
         },
+        module: {
+            rules: [
+                {
+                    test: /\.ts$/,
+                    loader: 'ts-loader'
+                },
+                {
+                    test: /\.html$/,
+                    loader: 'html-loader'
+                }
+            ]
+        },
         devServer: {
             contentBase: path.resolve(__dirname, './public/'),
-            watchContentBase: true,
             open: true,
-            port: 9000
+            port: 3000
         },
         plugins: [
             new HtmlWebpackPlugin({
