@@ -4,6 +4,7 @@
   "description": "Starter template for web front-end development.",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "dev": "webpack-dev-server",
     "build": "webpack --mode production"
   },
